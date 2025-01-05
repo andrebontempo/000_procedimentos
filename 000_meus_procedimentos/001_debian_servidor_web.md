@@ -10,7 +10,7 @@ apt update && apt upgrade -y
 
 ---
 
-## 2. **Instalar o Apache**
+## 2. **Instalar o Apache**!!!
 Apache será o servidor web que servirá os sites.
 ```bash
 apt install apache2 -y
