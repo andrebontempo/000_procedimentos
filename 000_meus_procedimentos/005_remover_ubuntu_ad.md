@@ -5,7 +5,7 @@ Link para ajudar o entendimento: https://www.server-world.info/en/note?os=Ubuntu
 Se você quiser **remover** um computador Ubuntu do domínio Active Directory, o processo é bastante simples e envolve a remoção do sistema da configuração de domínio. Abaixo está o procedimento passo a passo para retirar o Ubuntu do AD.
 
 ### 1. Verificar o domínio em que o sistema está ingressado
-Antes de realizar a remoção, é bom verificar em qual domínio o Ubuntu está atualmente ingressado. Para isso, use o comando:
+Antes de realizar a remoção, é bom verificar em qual domínio o  Ubuntu está atualmente ingressado. Para isso, use o comando:
 
 ```bash
 realm list
