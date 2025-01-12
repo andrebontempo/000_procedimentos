@@ -111,15 +111,17 @@ Para mostrar permissões de um usuário
 ```bash
 SHOW GRANTS FOR 'andredb'@'%';
 ```
-
-
-
-
 ```bash
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
+No maria DB é este o arquivo:
+```bash
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+```
 
 Encontre a linha abaixo e comente-a (adicione `#` no início):
+ou
+Encontre a linha abaixo e substitua para 0.0.0.0
 
 ```ini
 bind-address = 127.0.0.1
