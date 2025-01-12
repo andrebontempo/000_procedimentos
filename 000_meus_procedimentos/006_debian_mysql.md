@@ -1,5 +1,8 @@
 # Segue o procedimento atualizado, incluindo o teste para o acesso remoto antes da conclusão:  
 
+## Passo 1: Atualizar o servidor Debian
+
+
 ```markdown
 # Instalação e Configuração do MySQL no Debian 12
 
