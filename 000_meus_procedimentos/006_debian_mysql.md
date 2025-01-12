@@ -9,6 +9,13 @@ Antes de começar, certifique-se de que todos os pacotes do sistema estejam atua
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
+```bash
+usermod -aG sudo andre
+```
+Agora faça a conexão via SSH isto facilita as configurações pois usa o terminal local.
+ssh andre@<servidor>
+
+
 
 ## Passo 2: Instalar o MySQL Server
 Instale o pacote do MySQL Server usando o gerenciador de pacotes APT:
