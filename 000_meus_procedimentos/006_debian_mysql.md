@@ -21,6 +21,10 @@ ssh andre@<servidor>
 Instale o pacote do MySQL Server usando o gerenciador de pacotes APT:
 
 ```bash
+sudo apt install mariadb-server -y
+```
+
+```bash
 sudo apt install mysql-server -y
 ```
 
