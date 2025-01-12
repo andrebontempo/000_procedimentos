@@ -1,4 +1,4 @@
-# Segue o procedimento atualizado, incluindo o teste para o acesso remoto antes da conclusão:  
+# Procedimento para instalar um servidor debian com MYSQL 
 
 ## Passo 1: Atualizar o servidor Debian
 
