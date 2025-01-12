@@ -81,6 +81,24 @@ EXIT;
 > **Substitua** `adm_user` pelo nome desejado para o usuário e `sua_senha_segura` por uma senha forte.
 
 ## Passo 7: Configurar o Acesso Remoto
+
+Primeiro, se não tiver, fixe o IP do servidor
+
+```bash
+nano /etc/network/interfaces
+```
+```bash
+auto eth0
+iface eth0 inet static
+    address 192.168.0.69
+    netmask 255.255.255.0
+    gateway 192.168.0.1
+    dns-nameservers 8.8.8.8 8.8.4.4
+```
+
+
+
+
 Para permitir o acesso remoto ao MySQL, edite o arquivo de configuração:
 
 Para conceder acesso remoto para um usuário:
