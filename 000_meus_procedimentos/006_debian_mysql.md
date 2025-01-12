@@ -83,6 +83,20 @@ EXIT;
 ## Passo 7: Configurar o Acesso Remoto
 Para permitir o acesso remoto ao MySQL, edite o arquivo de configuração:
 
+Para conceder acesso remoto para um usuário:
+
+```bash
+GRANT ALL PRIVILEGES ON *.* TO 'andredb'@'%' IDENTIFIED BY 'andredb1234';
+FLUSH PRIVILEGES;
+```
+Para mostrar permissões de um usuário
+```bash
+SHOW GRANTS FOR 'andredb'@'%';
+```
+
+
+
+
 ```bash
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
