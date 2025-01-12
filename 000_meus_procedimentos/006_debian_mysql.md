@@ -1,15 +1,10 @@
-# Procedimento para instalar um servidor debian com MYSQL 
-
-## Passo 1: Atualizar o servidor Debian
-
-
-```markdown
 # Instalação e Configuração do MySQL no Debian 12
 
 Este guia detalha o processo para instalar e configurar o MySQL no Debian 12, criando um usuário administrador para gerenciar o banco de dados.
 
 ## Passo 1: Atualizar os Pacotes do Sistema
 Antes de começar, certifique-se de que todos os pacotes do sistema estejam atualizados:
+
 
 ```bash
 sudo apt update && sudo apt upgrade -y
