@@ -73,8 +73,9 @@ No console do MySQL, crie um novo usuário com permissões administrativas compl
 
 ```sql
 CREATE USER 'andredb'@'%' IDENTIFIED BY 'andredb1234';
-GRANT ALL PRIVILEGES ON *.* TO 'adm_user'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'andredb'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
+EXIT;
 ```
 
 > **Substitua** `adm_user` pelo nome desejado para o usuário e `sua_senha_segura` por uma senha forte.
