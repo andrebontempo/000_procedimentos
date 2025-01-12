@@ -72,7 +72,7 @@ Insira a senha configurada no passo anterior.
 No console do MySQL, crie um novo usuário com permissões administrativas completas:
 
 ```sql
-CREATE USER 'adm_user'@'%' IDENTIFIED BY 'sua_senha_segura';
+CREATE USER 'andredb'@'%' IDENTIFIED BY 'andredb1234';
 GRANT ALL PRIVILEGES ON *.* TO 'adm_user'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
