@@ -169,5 +169,6 @@ sudo tail -f /var/log/mysql/error.log
 - Configure um firewall para permitir conexões apenas de IPs autorizados.
 - Utilize SSL para proteger conexões diretas ao MariaDB (opcional).
 Esses passos devem garantir acesso remoto ao servidor MariaDB via SSH com testes eficazes de conectividade.
+ATUALIZADO
 
 
