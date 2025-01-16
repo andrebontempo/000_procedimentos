@@ -1,29 +1,29 @@
-# Instalação e Configuração do MySQL no Debian 12
+# Instalação e Configuração do MariaDB no Debian 12
 
 Este guia detalha o processo para instalar e configurar o MySQL no Debian 12, criando um usuário administrador para gerenciar o banco de dados.
 
 ## Passo 1: Atualizar os Pacotes do Sistema
 Antes de começar, certifique-se de que todos os pacotes do sistema estejam atualizados:
-
-
 ```bash
-sudo apt update && sudo apt upgrade -y
+apt install sudo
 ```
 ```bash
 usermod -aG sudo andre
 ```
-Agora faça a conexão via SSH isto facilita as configurações pois usa o terminal local.
+```bash
+apt update && sudo apt upgrade -y
+```
+Agora faça a conexão via SSH, isto facilita as configurações pois usa o terminal local.
+```bash
 ssh andre@<servidor>
-
-
-
+```
 ## Passo 2: Instalar o MySQL Server
 Instale o pacote do MySQL Server usando o gerenciador de pacotes APT:
-
+PARA MARIADB
 ```bash
-sudo apt install mariadb-server -y
+apt install mariadb-server -y
 ```
-
+OU PARA MySQL
 ```bash
 sudo apt install mysql-server -y
 ```
@@ -31,26 +31,20 @@ sudo apt install mysql-server -y
 > **Nota:** O Debian 12 utiliza os repositórios oficiais do MySQL. O pacote instalado será a versão mais estável disponível.
 
 ## Passo 3: Verificar o Status do MySQL
-Certifique-se de que o serviço MySQL está ativo e configurado para iniciar automaticamente com o sistema:
-
+Certifique-se de que o serviço mariadb está ativo e configurado para iniciar automaticamente com o sistema:
 ```bash
-sudo systemctl status mysql
+systemctl status mariadb
 ```
-
 Se não estiver ativo, inicie e habilite o serviço:
-
 ```bash
-sudo systemctl start mysql
-sudo systemctl enable mysql
+systemctl start mariadb
+systemctl enable mariadb
 ```
-
-## Passo 4: Configurar o MySQL com `mysql_secure_installation`
+## Passo 4: Configurar o mariaDB com `mysql_secure_installation`
 Execute o script de configuração inicial para melhorar a segurança do MySQL:
-
 ```bash
-sudo mysql_secure_installation
+mysql_secure_installation
 ```
-
 ### Durante o processo:
 1. Configure ou altere a senha do usuário `root`.
 2. Responda `Y` (Yes) para:
@@ -60,14 +54,11 @@ sudo mysql_secure_installation
    - Recarregar as tabelas de privilégios.
 
 ## Passo 5: Acessar o MySQL como Root
-Acesse o console do MySQL com o usuário `root`:
-
+Acesse o console do MySQL com o usuário `root` senha `1234`:
 ```bash
-sudo mysql -u root -p
+mysql -u root -p
 ```
-
 Insira a senha configurada no passo anterior.
-
 ## Passo 6: Criar um Usuário Administrador
 No console do MySQL, crie um novo usuário com permissões administrativas completas:
 
