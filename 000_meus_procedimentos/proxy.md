@@ -22,7 +22,7 @@ Aqui vai o uso...
 Para permitir que suas estações **Ubuntu 24.04 LTS** e **Linux Mint Xia 22.1** executem `apt update` e `apt upgrade` passando pelo **proxy autenticado**, siga os passos abaixo:
 
 ---
-#### Configurar o Proxy no Sistema
+## Configurar o Proxy no Sistema
 ### 1️⃣ **Configurar o Proxy no Sistema**
 Edite o arquivo de configuração global do proxy:
 
