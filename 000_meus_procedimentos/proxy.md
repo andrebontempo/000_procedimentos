@@ -2,7 +2,7 @@
 1. [Introdução](#introdução)
 2. [Instalação](#instalação)
 3. [Configuração](#configuração)
-4. [Uso](2️⃣ **Configurar o Proxy para o APT**)
+4. [Uso](Configurar o Proxy no Sistema)
 
 ## Introdução
 Aqui vai o texto da introdução...
@@ -22,7 +22,7 @@ Aqui vai o uso...
 Para permitir que suas estações **Ubuntu 24.04 LTS** e **Linux Mint Xia 22.1** executem `apt update` e `apt upgrade` passando pelo **proxy autenticado**, siga os passos abaixo:
 
 ---
-
+### Configurar o Proxy no Sistema
 ### 1️⃣ **Configurar o Proxy no Sistema**
 Edite o arquivo de configuração global do proxy:
 
