@@ -226,3 +226,109 @@ source /etc/environment
 
 Se precisar de mais detalhes, me avise! 🚀
 
+---
+
+As configurações de proxy feitas no ambiente gráfico não valem automaticamente para a linha de comando porque o **ambiente gráfico (GUI)** e o **terminal (CLI)** gerenciam variáveis de configuração de maneira diferente.  
+
+---
+
+## 🔍 **Motivos principais**  
+
+### 1️⃣ **As configurações gráficas afetam apenas aplicativos GUI**  
+Quando você configura um proxy no **GNOME, KDE ou Cinnamon**, essa configuração é aplicada apenas aos aplicativos que seguem as definições do ambiente gráfico, como:  
+✅ Navegadores (Firefox, Chrome, Edge).  
+✅ Gerenciadores de arquivos (Nautilus, Dolphin, Nemo).  
+✅ Aplicativos gráficos que usam bibliotecas GTK/QT.  
+
+Porém, aplicativos de linha de comando como `wget`, `curl` e `apt` **não leem automaticamente essas configurações**.  
+
+---
+
+### 2️⃣ **A Linha de Comando Não Usa Configurações do GNOME/KDE**  
+No ambiente gráfico, as configurações de proxy são salvas em arquivos como:  
+📁 **GNOME** → `~/.config/dconf/user`  
+📁 **KDE Plasma** → `~/.config/kioslaverc`  
+
+Já o **terminal (CLI)** não lê esses arquivos. Ele busca as variáveis de ambiente (`http_proxy`, `https_proxy`) que precisam ser definidas manualmente no `/etc/environment`, `~/.bashrc`, ou `/etc/apt/apt.conf.d/95proxies`.
+
+---
+
+### 3️⃣ **Os programas de linha de comando usam métodos diferentes**  
+Cada programa pode ter seu próprio sistema de configuração de proxy:  
+- `apt` → Usa arquivos dentro de `/etc/apt/apt.conf.d/`.  
+- `wget` → Lê `/etc/wgetrc` ou `~/.wgetrc`.  
+- `git` → Precisa de `git config --global http.proxy`.  
+- `curl` → Usa `http_proxy` e `https_proxy`.  
+
+Se um programa não encontrar as variáveis globais de proxy, ele ignora a configuração do ambiente gráfico.
+
+---
+
+### 4️⃣ **O Proxy Gráfico Pode Depender do "GSettings" ou "DConf"**  
+O ambiente gráfico pode usar **GSettings** para definir o proxy. Se um aplicativo da linha de comando não for compatível com GSettings, ele não vai reconhecer essas configurações.  
+
+Você pode testar isso rodando:  
+
+```bash
+gsettings get org.gnome.system.proxy mode
+```
+
+Se o resultado for `manual`, o proxy está ativo na interface gráfica, mas não necessariamente na CLI.
+
+---
+
+## 🔧 **Como fazer o proxy do ambiente gráfico valer no terminal?**  
+### ✅ **Solução 1: Definir manualmente as variáveis de ambiente**  
+Abra um terminal e digite:  
+
+```bash
+export http_proxy="http://usuario:senha@proxy.empresa.com:porta/"
+export https_proxy="http://usuario:senha@proxy.empresa.com:porta/"
+export ftp_proxy="http://usuario:senha@proxy.empresa.com:porta/"
+export no_proxy="127.0.0.1,localhost,.empresa.com"
+```
+
+Se quiser que isso seja **permanente**, adicione essas linhas ao arquivo **`~/.bashrc`** ou **`/etc/environment`**.
+
+```bash
+echo 'export http_proxy="http://usuario:senha@proxy.empresa.com:porta/"' >> ~/.bashrc
+echo 'export https_proxy="http://usuario:senha@proxy.empresa.com:porta/"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+---
+
+### ✅ **Solução 2: Configurar o Proxy Específico para `apt`**
+```bash
+echo 'Acquire::http::Proxy "http://usuario:senha@proxy.empresa.com:porta/";' | sudo tee /etc/apt/apt.conf.d/95proxies
+echo 'Acquire::https::Proxy "http://usuario:senha@proxy.empresa.com:porta/";' | sudo tee -a /etc/apt/apt.conf.d/95proxies
+```
+
+---
+
+### ✅ **Solução 3: Fazer o Terminal Obedecer ao Proxy do GNOME**
+Se estiver usando **GNOME ou Cinnamon**, você pode configurar o terminal para usar as mesmas configurações da interface gráfica:
+
+```bash
+gsettings get org.gnome.system.proxy mode
+gsettings get org.gnome.system.proxy.http host
+gsettings get org.gnome.system.proxy.http port
+```
+
+Se os valores estiverem configurados corretamente, faça um script para que o terminal use essas configurações:
+
+```bash
+export http_proxy="http://$(gsettings get org.gnome.system.proxy.http host):$(gsettings get org.gnome.system.proxy.http port)/"
+export https_proxy="$http_proxy"
+export ftp_proxy="$http_proxy"
+export no_proxy="127.0.0.1,localhost"
+```
+
+Coloque esse script no **`~/.bashrc`** ou no `/etc/profile` para que seja carregado automaticamente.
+
+---
+
+## ✅ **Conclusão**
+O motivo principal para o proxy do ambiente gráfico **não valer para a linha de comando** é que o **terminal não lê diretamente as configurações da GUI**. Para resolver isso, você precisa definir manualmente as variáveis de ambiente ou configurar cada programa de CLI separadamente.  
+
+Se precisar de mais detalhes ou ajustes, me avise! 🚀
