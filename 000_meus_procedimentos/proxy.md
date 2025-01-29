@@ -24,24 +24,6 @@ Aqui vai o uso...
 
 </div>
 
-## Índice
-1. [Introdução](#introdução)
-2. [Instalação](#instalação)
-3. [Configuração](#configuração)
-4. [Uso](#Configurar-o-proxy-no-sistema)
-
-## Introdução
-Aqui vai o texto da introdução...
-
-## Instalação
-Aqui vai o processo de instalação...
-
-## Configuração
-Aqui vai a configuração...
-
-## Usoasdf
-Aqui vai o uso...
-
 
 
 
