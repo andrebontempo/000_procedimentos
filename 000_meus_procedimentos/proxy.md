@@ -2,7 +2,7 @@
 1. [Introdução](#introdução)
 2. [Instalação](#instalação)
 3. [Configuração](#configuração)
-4. [Uso](#usoasdf)
+4. [Uso](#2️⃣ **Configurar o Proxy para o APT**)
 
 ## Introdução
 Aqui vai o texto da introdução...
