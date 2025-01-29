@@ -2,7 +2,7 @@
 1. [Introdução](#introdução)
 2. [Instalação](#instalação)
 3. [Configuração](#configuração)
-4. [Uso](configurar-o-proxy-no-sistema)
+4. [Uso](#Configurar-o-proxy-no-sistema)
 
 ## Introdução
 Aqui vai o texto da introdução...
