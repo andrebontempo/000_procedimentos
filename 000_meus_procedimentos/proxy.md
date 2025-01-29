@@ -137,3 +137,29 @@ echo 'Acquire::http::Proxy "http://localhost:3128/";' | sudo tee /etc/apt/apt.co
 Após seguir esses passos, suas estações Linux devem conseguir atualizar pacotes passando pelo proxy autenticado da empresa.
 
 Se precisar de mais ajustes, me avise! 🚀
+
+##  **Socks**
+
+O protocolo **SOCKS** só é necessário se o seu proxy corporativo **exclusivamente** suporta esse protocolo (como no caso de alguns proxies com SSH tunneling ou Tor). Porém, a maioria dos proxies empresariais trabalha com **HTTP(S)**, então geralmente não é necessário configurar o **SOCKS**.
+
+Se o seu proxy suporta **SOCKS5**, você pode adicionar as seguintes linhas ao `/etc/environment`:  
+
+```bash
+socks_proxy="socks5://usuario:senha@proxy.empresa.com:porta/"
+```
+
+### **Quando usar SOCKS?**
+- Se sua empresa explicitamente exige **SOCKS5**.
+- Se você usa um **proxy SSH (via `ssh -D` para tunelamento SOCKS)**.
+- Se o proxy **não suporta diretamente HTTP/HTTPS**.
+
+Caso tenha dúvidas, você pode testar se sua rede responde a **SOCKS5** rodando:
+
+```bash
+curl --proxy socks5://proxy.empresa.com:porta -I https://google.com
+```
+
+Se a resposta funcionar, então precisa configurar o **SOCKS5** no ambiente. Se não, **o uso de HTTP/HTTPS no `http_proxy` e `https_proxy` já é suficiente**.  
+
+Se precisar de mais alguma configuração específica, me avise! 🚀
+
