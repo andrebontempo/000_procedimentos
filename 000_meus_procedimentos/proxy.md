@@ -2,7 +2,7 @@
 1. [Introdução](#introdução)
 2. [Instalação](#instalação)
 3. [Configuração](#configuração)
-4. [Uso](Configurar o Proxy no Sistema)
+4. [Uso](Configurar-o-Proxy-no-Sistema)
 
 ## Introdução
 Aqui vai o texto da introdução...
