@@ -163,3 +163,66 @@ Se a resposta funcionar, então precisa configurar o **SOCKS5** no ambiente. Se 
 
 Se precisar de mais alguma configuração específica, me avise! 🚀
 
+O arquivo **`/etc/environment`** é um arquivo de configuração do sistema no **Linux** usado para definir **variáveis de ambiente globais** que são carregadas automaticamente para todos os usuários e processos do sistema.  
+
+---
+
+
+## 📌 **Para que serve o `/etc/environment`?**  
+
+Ele é utilizado para definir **variáveis globais** do sistema, como:  
+- **Proxies** (`http_proxy`, `https_proxy`, `ftp_proxy`, etc.).
+- **Caminhos de busca de executáveis** (`PATH`).
+- **Localização e idioma** (`LANG`, `LC_ALL`).
+- **Configurações de ambiente personalizadas**.
+
+Diferente de outros arquivos como **`/etc/profile`** ou **`~/.bashrc`**, que são executados como scripts, o **`/etc/environment`** é simplesmente um arquivo de texto que contém declarações de variáveis no formato `NOME=VALOR`.  
+
+As variáveis definidas nesse arquivo são **carregadas automaticamente para todos os usuários no login**, independente do shell utilizado.
+
+---
+
+## 🛠️ **Como editar o `/etc/environment`?**  
+
+Você pode editar o arquivo com um editor de texto, como `nano`:
+
+```bash
+sudo nano /etc/environment
+```
+
+E adicionar ou modificar variáveis, por exemplo:
+
+```ini
+http_proxy="http://usuario:senha@proxy.empresa.com:porta/"
+https_proxy="http://usuario:senha@proxy.empresa.com:porta/"
+ftp_proxy="http://usuario:senha@proxy.empresa.com:porta/"
+no_proxy="127.0.0.1,localhost,.empresa.com"
+LANG="pt_BR.UTF-8"
+```
+
+Depois de editar, para carregar as alterações sem reiniciar o sistema, execute:
+
+```bash
+source /etc/environment
+```
+
+---
+
+## 🔄 **Diferença entre `/etc/environment` e outros arquivos de configuração**
+| Arquivo | Carregamento | Abrangência | Uso Principal |
+|---------|------------|-------------|--------------|
+| `/etc/environment` | Carregado no login | Global (todos os usuários) | Definir variáveis de ambiente permanentes |
+| `/etc/profile` | Executado no login | Global (bash e sh) | Configurações gerais de shell |
+| `/etc/bash.bashrc` | Executado ao abrir um terminal | Global (apenas Bash) | Personalizações do shell |
+| `~/.bashrc` | Executado ao abrir um terminal | Usuário específico | Configurações pessoais do Bash |
+| `~/.profile` | Executado no login | Usuário específico | Inicialização do ambiente |
+
+---
+
+## ✅ **Quando usar `/etc/environment`?**
+- **Quando precisa definir variáveis globais para todos os usuários e processos**.
+- **Quando o shell não é garantido (ex: serviços, ambientes gráficos, jobs automáticos)**.
+- **Para configurar variáveis de proxy em sistemas corporativos**.
+
+Se precisar de mais detalhes, me avise! 🚀
+
