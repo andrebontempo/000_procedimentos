@@ -1,8 +1,11 @@
 # Curso GRÁTIS de Linux Mint 20.x/21.x em Notebook Dell (Inspiron, XPS, Vostro e G3), Notebook Positivo (N4340) e Desktop Gamer Xeon
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos e materiais gratuitos para o Canal do YouTUBE
+
 ## 💰 Chave PIX do projeto: robsonvaamonde@gmail.com
+
 ## 💰 Link de doação do PagSeguro: https://pag.ae/bjlSJcH
+
 ## 💰 Link de doação do Paypal: https://www.paypal.com/donate/?hosted_button_id=EALLB7DQ3U6H2
 
 Robson Vaamonde<br>
@@ -25,13 +28,14 @@ Github Procedimentos em TI: https://github.com/vaamonde<br>
 <a href="https://github.com/vaamonde/dell-linuxmint/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/vaamonde/dell-linuxmint?color=2b9348"></a>
 <a href="https://github.com/vaamonde/dell-linuxmint/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vaamonde/dell-linuxmint?color=2b9348" alt="License Badge"/></a>
 </div>
-
+#
 ## **Links Oficiais do Linux Mint:**
 Site do Linux Mint: https://www.linuxmint.com/​<br>
 Blog do Linux Mint: https://blog.linuxmint.com/​<br>
 FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 
 ## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
+
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUOKXT6TIhjwPWBNpUoExsNF
 
 ## **🎅 ÓTIMO PRESENTE DE NATAL laçamento da NOVA versão do LINUX MINT 21.3 VIRGINIA BETA Cinnamon 6.0 🐧**
@@ -41,14 +45,14 @@ Vídeo mostrando os procedimentos básicos para baixar e instalar no VirtualBOX 
 Com lançamento previsto para o Natal de 2023 (25 ou depois), a nova versão da Distribuição Linux Mint 21.3 Codinome Virginia traz grandes mudanças e melhorias conforme os links oficiais da distribuição.
 
 Novos Recursos: https://www.linuxmint.com/rel_virginia.php<br>
-01_ Suporte Total ao SecureBoot;<br>
-02_ Grande atualização do Hipnotix;<br>
-03_ Cinnamon versão 6.0;<br>
-04_ Wayland Experimental;<br>
-05_ Suporte a Celular no Warpinator;<br>
-06_ Novas Artes do Cinnamon;<br>
-07_ Kernel continua na versão 5.15;<br>
-08_ LTS da Versão de suporte de segurança até 2027.
+01* Suporte Total ao SecureBoot;<br>
+02* Grande atualização do Hipnotix;<br>
+03* Cinnamon versão 6.0;<br>
+04* Wayland Experimental;<br>
+05* Suporte a Celular no Warpinator;<br>
+06* Novas Artes do Cinnamon;<br>
+07* Kernel continua na versão 5.15;<br>
+08* LTS da Versão de suporte de segurança até 2027.
 
 #Lançamentos Oficiais do Linux Mint<br>
 10/12/2023 - Lançamento do BETA do Linux Mint 21.3: https://blog.linuxmint.com/?p=4611<br>
@@ -76,18 +80,18 @@ https://blog.linuxmint.com/?p=4523
 
 02/06/2023 - Finalização das Correções da Versão BETA do Linux Mint 21.1 Victoria<br>
 https://blog.linuxmint.com/?p=4518<br>
-01_ CJS (Cinnamon JavaScript) e GJS (Gnome JavaScript);<br>
-02_ XDG (X Development Group);<br>
-03_ Cinnamon 5.8;<br>
-04_ Preferências de Cor;<br>
-05_ Melhoria no Algoritmo do Gerenciador de Aplicativos.
+01* CJS (Cinnamon JavaScript) e GJS (Gnome JavaScript);<br>
+02* XDG (X Development Group);<br>
+03* Cinnamon 5.8;<br>
+04* Preferências de Cor;<br>
+05\_ Melhoria no Algoritmo do Gerenciador de Aplicativos.
 
 02/05/2023 - Novidades da Versão https://blog.linuxmint.com/?p=4518<br>
 https://blog.linuxmint.com/?p=4513<br>
-01_ Tooltips (Dicas de Ferramentas);<br>
-02_ Notifications (Notificações);<br>
-03_ Secureboot (Boot Seguro);<br>
-04_ Warpinator (Compartilhamento de Arquivos)
+01* Tooltips (Dicas de Ferramentas);<br>
+02* Notifications (Notificações);<br>
+03* Secureboot (Boot Seguro);<br>
+04* Warpinator (Compartilhamento de Arquivos)
 
 [![Linux Mint 21.2](http://img.youtube.com/vi/Ie9WblbiUu0/0.jpg)](https://www.youtube.com/watch?v=Ie9WblbiUu0 "Linux Mint 21.2")
 
@@ -114,19 +118,19 @@ https://blog.linuxmint.com/?p=4442
 https://blog.linuxmint.com/?p=4438
 
 01/11/2022 - Novidades da Versão do Linux Mint 21.1 Vera<br>
-01_ Atualização do Blueman Bluetooth<br>
-02_ Menos solicitações de Senha na remoção de aplicativos<br>
-03_ Gerenciador de Atualização com suporte ao Flatpak<br>
-04_ Mudanças Visuais no Nemo<br>
-05_ Atalho para Configurações de Exibição na Área de Trabalho<br>
+01* Atualização do Blueman Bluetooth<br>
+02* Menos solicitações de Senha na remoção de aplicativos<br>
+03* Gerenciador de Atualização com suporte ao Flatpak<br>
+04* Mudanças Visuais no Nemo<br>
+05\_ Atalho para Configurações de Exibição na Área de Trabalho<br>
 https://blog.linuxmint.com/?p=4424
 
 30/10/2022 - Novidades da Versão do Linux Mint 21.1 Vera<br>
-01_ Atualização do Timeshift agora mantido pelo Linux Mint<br>
-02_ Atualização das Fontes de Software e PPA<br>
-03_ Atualização do Gerenciador de Drivers<br>
-04_ Ferramentas de Verificação de ISO<br>
-05_ Atualização da Ferramenta de Gravação de Imagem USB<br>
+01* Atualização do Timeshift agora mantido pelo Linux Mint<br>
+02* Atualização das Fontes de Software e PPA<br>
+03* Atualização do Gerenciador de Drivers<br>
+04* Ferramentas de Verificação de ISO<br>
+05\_ Atualização da Ferramenta de Gravação de Imagem USB<br>
 https://blog.linuxmint.com/?p=4408
 
 [![Linux Mint 21.1](http://img.youtube.com/vi/mljY0_WW_cA/0.jpg)](https://www.youtube.com/watch?v=mljY0_WW_cA "Linux Mint 21.1")
@@ -174,7 +178,7 @@ Guia do How to upgrade to Linux Mint 21: https://linuxmint-user-guide.readthedoc
 
 Link da vídeo aula: https://www.youtube.com/watch?v=QaLS-_lnu48
 
-Material de apoio desse vídeo: 
+Material de apoio desse vídeo:
 
 ## **Lançamento Oficial do Linux Mint 20.1 Ulyssa - Instalação no Oracle VirtualBOX**
 
@@ -195,9 +199,11 @@ Link da vídeo aula: https://www.youtube.com/watch?v=jhqmvgMQypo
 Link da apresentação utilizada nesse vídeo: https://github.com/vaamonde/dell-linuxmint/blob/master/00-Projeto-Mint-Dell.pdf
 
 ## **💻 Notebooks utilizados: Dell Inspiron 1440, XPS L502, Vostro 5480 e G3 3590 🐧🐧**
+
 ![Notebook Dell](img/dell.png)
 
 ## **💻 Desktop utilizado: Xeon E5-2678 V3, MB Huananzhi X99-F8, 32GB RAM DDR-4, NVMe e SSD 🐧🐧**
+
 ![Notebook Dell](img/xeon.png)
 
 ## **💻 Dell G3 3590 🐧🐧 Instalação do Linux Mint 20.3 Una (Primeira Parte) 🐧🐧**
@@ -310,7 +316,7 @@ Link dos procedimentos utilizados nesse vídeo: https://github.com/vaamonde/dell
 
 Vídeo mostrando os procedimentos básicos para configurar a versão "OFICIAL" do Novo Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021
 
-Décimo vídeo da série de atualização do meu Curso de Linux Mint, os procedimentos para configurar e instalar os principais aplicativos, drives e configurações da Nova versão  "OFICIAL"do Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021 fornecido pelo Prof. Ramos (Leandro Ramos) do Canal Professorramos do YouTUBE (https://www.youtube.com/professorramos).
+Décimo vídeo da série de atualização do meu Curso de Linux Mint, os procedimentos para configurar e instalar os principais aplicativos, drives e configurações da Nova versão "OFICIAL"do Linux Mint 20.2 Uma no Desktop Gamer Xeon E5-2678 V3 2.5Ghz de 2021 fornecido pelo Prof. Ramos (Leandro Ramos) do Canal Professorramos do YouTUBE (https://www.youtube.com/professorramos).
 
 [![Desktop Gamer Xeon](http://img.youtube.com/vi/sXDqOccf1qw/0.jpg)](https://www.youtube.com/watch?v=sXDqOccf1qw "Desktop Gamer Xeon")
 
