@@ -28,11 +28,12 @@ Github Procedimentos em TI: https://github.com/vaamonde<br>
 <a href="https://github.com/vaamonde/dell-linuxmint/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/vaamonde/dell-linuxmint?color=2b9348"></a>
 <a href="https://github.com/vaamonde/dell-linuxmint/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vaamonde/dell-linuxmint?color=2b9348" alt="License Badge"/></a>
 </div>
-#
+
 ## **Links Oficiais do Linux Mint:**
+
 Site do Linux Mint: https://www.linuxmint.com/​<br>
 Blog do Linux Mint: https://blog.linuxmint.com/​<br>
-FTP  do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
+FTP do Linux Mint: https://ftp.heanet.ie/mirrors/linuxmint.com/stable/<br>
 
 ## **Playlist do YouTUBE com todos os Vídeos do Linux Mint 20.x/21.x:**
 
