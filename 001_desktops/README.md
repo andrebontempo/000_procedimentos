@@ -28,7 +28,7 @@ Github Procedimentos em TI: https://github.com/vaamonde<br>
 <a href="https://github.com/vaamonde/dell-linuxmint/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/vaamonde/dell-linuxmint?color=2b9348"></a>
 <a href="https://github.com/vaamonde/dell-linuxmint/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vaamonde/dell-linuxmint?color=2b9348" alt="License Badge"/></a>
 </div>
-
+##
 ## **Links Oficiais do Linux Mint:**
 
 Site do Linux Mint: https://www.linuxmint.com/​<br>
