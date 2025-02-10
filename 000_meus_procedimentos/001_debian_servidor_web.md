@@ -2,8 +2,12 @@ Aqui está um checklist detalhado com os comandos necessários para configurar o
 
 ---
 
+##
+
 ## 1. **Atualizar o sistema - Execute todos os comandos como ROOT**
+
 Antes de começar, atualize o sistema para garantir que todos os pacotes estão atualizados.
+
 ```bash
 apt update && apt upgrade -y
 ```
@@ -11,7 +15,9 @@ apt update && apt upgrade -y
 ---
 
 ## 2. **Instalar o Apache**!!!
+
 Apache será o servidor web que servirá os sites.
+
 ```bash
 apt install apache2 -y
 systemctl enable apache2
@@ -21,14 +27,17 @@ systemctl start apache2
 ---
 
 ## 3. **Configurar os Virtual Hosts no Apache**
+
 Crie dois arquivos de configuração para os sites no diretório `/etc/apache2/sites-available/`.
 
 ### Para **inmemoriambrasil.com.br**
+
 1. Crie o arquivo de configuração:
    ```bash
    nano /etc/apache2/sites-available/inmemoriambrasil.com.br.conf
    ```
 2. Adicione o seguinte conteúdo:
+
    ```apache
    <VirtualHost *:80>
        ServerName inmemoriambrasil.com.br
@@ -47,10 +56,13 @@ Crie dois arquivos de configuração para os sites no diretório `/etc/apache2/s
    ```
 
 3. Repita o processo para **inmemoriambrasilteste.com.br**:
+
    ```bash
    nano /etc/apache2/sites-available/inmemoriambrasilteste.com.br.conf
    ```
+
    Conteúdo:
+
    ```apache
    <VirtualHost *:80>
        ServerName inmemoriambrasilteste.com.br
@@ -69,6 +81,7 @@ Crie dois arquivos de configuração para os sites no diretório `/etc/apache2/s
    ```
 
 4. Ative os Virtual Hosts:
+
    ```bash
    a2ensite inmemoriambrasil.com.br.conf
    a2ensite inmemoriambrasilteste.com.br.conf
@@ -82,13 +95,16 @@ Crie dois arquivos de configuração para os sites no diretório `/etc/apache2/s
 ---
 
 ## 4. **Criar os diretórios dos sites**
+
 Crie os diretórios para os arquivos dos sites.
+
 ```bash
 mkdir -p /var/www/inmemoriambrasil.com.br
 mkdir -p /var/www/inmemoriambrasilteste.com.br
 ```
 
 Defina as permissões:
+
 ```bash
 chown -R www-data:www-data /var/www/
 chmod -R 755 /var/www/
@@ -97,12 +113,15 @@ chmod -R 755 /var/www/
 ---
 
 ## 5. **Instalar Node.js**
+
 Instale o Node.js e o gerenciador de pacotes npm.
+
 ```bash
 apt install -y nodejs npm
 ```
 
 Verifique a versão instalada:
+
 ```bash
 node -v
 npm -v
@@ -111,6 +130,7 @@ npm -v
 ---
 
 ## 6. **Configurar os sites com Bootstrap e Node.js**
+
 1. Entre no diretório de cada site:
    ```bash
    cd /var/www/inmemoriambrasil.com.br
@@ -130,23 +150,28 @@ Repita para **inmemoriambrasilteste.com.br**.
 ---
 
 ## 7. **Instalar e Configurar o MariaDB**
+
 1. Instale o MariaDB:
+
    ```bash
    apt install mariadb-server mariadb-client -y
    ```
 
 2. Inicie e habilite o serviço:
+
    ```bash
    systemctl start mariadb
    systemctl enable mariadb
    ```
 
 3. Acesse o MariaDB:
+
    ```bash
    mysql
    ```
 
 4. Crie os bancos de dados e usuários para os sites:
+
    ```sql
    CREATE DATABASE inmemoriambrasil;
    CREATE DATABASE inmemoriambrasilteste;
@@ -164,6 +189,7 @@ Repita para **inmemoriambrasilteste.com.br**.
 ---
 
 ## 8. **Testar o Apache, Node.js e MariaDB**
+
 1. Verifique se os sites estão funcionando no navegador acessando `http://inmemoriambrasil.com.br` e `http://inmemoriambrasilteste.com.br`.
 2. Teste a conexão com o MariaDB usando Node.js.
 3. Crie o arquivo teste_db.js dentro do diretório do site, como seguinte conteúdo:
@@ -202,10 +228,13 @@ async function testConnection() {
 // Executa o teste de conexão
 testConnection();
 ```
+
 4 - Execute o script:
+
 ```bash
    node teste_db.js
-   ```
+```
+
 4 - Caso dê erro, execute:
 npm list mariadb
 npm install mariadb
@@ -215,4 +244,5 @@ node teste_db.js
 ---
 
 ### **Próximos passos**
+
 Após concluir a configuração básica, você pode proceder com as configurações de segurança (por exemplo, instalar certificados SSL com Let's Encrypt, configurar UFW, etc.). Informe-me quando quiser continuar!
