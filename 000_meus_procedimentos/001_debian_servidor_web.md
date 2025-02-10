@@ -2,8 +2,6 @@ Aqui está um checklist detalhado com os comandos necessários para configurar o
 
 ---
 
-##
-
 ## 1. **Atualizar o sistema - Execute todos os comandos como ROOT**
 
 Antes de começar, atualize o sistema para garantir que todos os pacotes estão atualizados.
