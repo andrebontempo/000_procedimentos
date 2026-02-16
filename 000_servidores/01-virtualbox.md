@@ -1,6 +1,9 @@
-# Autor: Robson Vaamonde d<br>  
+# Autor: Robson Vaamonde d<br>
+
 # Procedimentos em TI: http://procedimentosemti.com.br<br>
-# Bora para Prática: http://boraparapratica.com.br<br>
+
+# Bora para ssPrática: http://boraparapratica.com.br<br>
+
 #Robson Vaamonde: http://vaamonde.com.br<br>
 #Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
 #Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
